@@ -34,18 +34,25 @@ npm install ethers wagmi viem @rainbow-me/rainbowkit
 
 保留主要文件：
 ```
-/src
- ├── app/
- │    ├── layout.tsx
- │    └── page.tsx
- ├── components/
- │    └── WalletConnector.tsx
- ├── context/
- │    └── WalletContext.tsx
- ├── config/
- │    └── networks.ts
- └── utils/
-      └── provider.ts
+my-app/
+├─ app/                  # App Router 根目录（Next.js 13+ 默认）
+│   ├─ layout.tsx        # 全局布局文件
+│   ├─ page.tsx          # 首页路由
+│   └─ api/              # API 路由目录 (可选)
+├─ components/           # React 组件
+│   └─ WalletConnector.tsx
+├─ context/              # Context 或 Provider
+│   └─ WalletContext.tsx
+├─ config/               # 配置文件
+│   └─ networks.ts
+├─ public/               # 公共静态资源（图片、favicon 等）
+├─ styles/               # 全局样式文件
+│   └─ globals.css
+├─ node_modules/
+├─ package.json
+├─ next.config.js        # Next.js 配置文件
+└─ tsconfig.json
+
 ```
 
 ---
